@@ -9,7 +9,7 @@ Everything here is written in pure Python.
 
 ### 1. Sorting
 Classic sorting algorithms implemented to visualize $O(n^2)$ vs $O(n \log n)$.
-- [x] [Insertion Sort](sorting/insertion_sort.py)
+- [x] [Insertion Sort](src/sorting/insertion_sort.py)
 - [x] [Merge Sort](sorting/merge_sort.py)
 - [x] [Quick Sort](sorting/quick_sort.py)
 - [x] [Heap Sort](sorting/heap_sort.py)
