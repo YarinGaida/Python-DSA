@@ -1,45 +1,41 @@
-# ⚡ Data Structures & Algorithms in Python
+# 🐍 DSA Implementations in Python
 
-> **A comprehensive collection of fundamental computer science algorithms implemented from scratch in Python.**
-> This repository serves as a personal study guide for understanding algorithmic complexity, memory management, and graph theory.
+This repo is my personal collection of Data Structures and Algorithms, built from scratch.
+The main goal here wasn't just to write code that works, but to understand the logic and complexity "under the hood" without relying on external libraries.
 
-## 📚 Overview
-The goal of this project is to implement standard algorithms without relying on external "black-box" libraries. Each implementation focuses on code readability and strict adherence to the theoretical time complexities (Big-O).
+Everything here is written in pure Python.
 
-## 🚀 Implemented Algorithms
+## 📂 What's Inside
 
-### 1. Sorting Algorithms
-- [x] **Insertion Sort** - $O(n^2)$
-- [x] **Merge Sort** - $O(n \log n)$
-- [x] **Quick Sort** - $O(n \log n)$
-- [x] **Heap Sort** - $O(n \log n)$ (Implemented via Max-Heap)
-- [ ] **Bucket Sort** *[Planned]*
+### 1. Sorting
+Classic sorting algorithms implemented to visualize $O(n^2)$ vs $O(n \log n)$.
+- [x] **Insertion Sort**
+- [x] **Merge Sort** (Recursive implementation)
+- [x] **Quick Sort**
+- [x] **Heap Sort** (Using my own Max-Heap structure)
+- [ ] **Bucket Sort**
 
 ### 2. Data Structures
-- [x] **Linked Lists** (Singly/Doubly)
-- [x] **Stacks & Queues** (FIFO/LIFO implementations)
-- [x] **Binary Heaps** (Min/Max Heap, `build_max_heap`, `heapify`)
-- [ ] **Binary Search Trees (BST)** *[Planned]*
-- [ ] **Disjoint Set Union (Union-Find)** *[Planned]*
+Building the foundations.
+- [x] **Linked Lists** (Singly & Doubly)
+- [x] **Stacks & Queues**
+- [x] **Binary Heaps** (Includes `build_max_heap` and `heapify`)
+- [ ] **Binary Search Trees (BST)**
 
-### 3. Graph Traversal & Search
-- [x] **Breadth-First Search (BFS)** - Shortest path in unweighted graphs.
-- [x] **Depth-First Search (DFS)** - Exhaustive search / Cycle detection.
-- [x] **Topological Sort** - (Using DFS for DAGs).
+### 3. Graphs & Traversal
+Basic navigation of nodes and edges.
+- [x] **BFS** (Breadth-First Search)
+- [x] **DFS** (Depth-First Search)
+- [x] **Topological Sort** (Directed Acyclic Graphs)
 
-### 4. Shortest Path Algorithms (Weighted Graphs)
-- [x] **Dijkstra's Algorithm** - $O(E + V \log V)$ using Priority Queue.
-- [x] **Bellman-Ford Algorithm** - Handles negative weights.
-- [x] **Floyd-Warshall Algorithm** - All-pairs shortest paths ($O(V^3)$).
+### 4. Shortest Path (Weighted Graphs)
+Solvers for weighted graph problems.
+- [x] **Dijkstra** (Using Priority Queue)
+- [x] **Bellman-Ford** (Handling negative edges)
+- [x] **Floyd-Warshall** (All-pairs shortest path)
 
-### 5. Minimum Spanning Trees (MST)
-- [x] **Prim's Algorithm**
-- [ ] **Kruskal's Algorithm** *[Planned]*
-
-### 6. Network Flow
-- [x] **Ford-Fulkerson Method**
-- [x] **Edmonds-Karp Algorithm** (BFS implementation of Ford-Fulkerson).
-
-### 7. Advanced Concepts
-- [ ] **Dynamic Programming** (Knapsack, LCS) *[Planned]*
-- [ ] **Greedy Algorithms** (Huffman Coding) *[Planned]*
+### 5. Network Flow & MST
+Advanced graph theory implementations.
+- [x] **Prim's Algorithm** (Minimum Spanning Tree)
+- [x] **Ford-Fulkerson** (Max Flow)
+- [x] **Edmonds-Karp** (BFS optimization for Max Flow)
