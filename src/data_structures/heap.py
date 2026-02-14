@@ -1,7 +1,6 @@
 import math
 import networkx as nx
 import matplotlib.pyplot as plt
-from typing import List, Any
 
 class MaxHeap:
     """
@@ -11,13 +10,13 @@ class MaxHeap:
     def __init__(self):
         self.heap = []
 
-    def parent(self, i: int) -> int:
+    def parent(self, i: int):
         return (i - 1) // 2
 
-    def left_child(self, i: int) -> int:
+    def left_child(self, i: int):
         return 2 * i + 1
 
-    def right_child(self, i: int) -> int:
+    def right_child(self, i: int):
         return 2 * i + 2
 
     def max_heapify(self, i: int, n: int):
