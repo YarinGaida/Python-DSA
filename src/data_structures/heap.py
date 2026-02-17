@@ -1,6 +1,7 @@
 import math
 import networkx as nx
 import matplotlib.pyplot as plt
+from typing import List
 
 class MaxHeap:
     """
@@ -8,18 +9,18 @@ class MaxHeap:
     In a Max-Heap, the key of each node is >= the keys of its children.
     """
     def __init__(self):
-        self.heap = []
+        self.heap = [] # An array
 
-    def parent(self, i: int):
+    def parent(self, i: int) -> int:
         return (i - 1) // 2
 
-    def left_child(self, i: int):
+    def left_child(self, i: int) -> int:
         return 2 * i + 1
 
-    def right_child(self, i: int):
+    def right_child(self, i: int) -> int:
         return 2 * i + 2
 
-    def max_heapify(self, i: int, n: int):
+    def max_heapify(self, i: int, n: int) -> None:
         """
         Maintains the Max-Heap property for a subtree rooted at index i.
         Time Complexity: O(log n) - height of the tree.
@@ -44,8 +45,8 @@ class MaxHeap:
     def build_max_heap(self, arr: List[int]):
         """
         Converts a random array into a Max-Heap.
-        Crucial: We iterate from the last non-leaf node down to 0.
-        Time Complexity: O(n) (mathematically proven, clearer than O(n log n)).
+        We iterate from the last non-leaf node down to 0.
+        Time Complexity: O(n)
         """
         self.heap = arr
         n = len(self.heap)

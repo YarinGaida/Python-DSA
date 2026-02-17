@@ -3,8 +3,7 @@ import random
 
 try:
     heap = MaxHeap()
-    user_input = input("Enter the length of the array (e.g., 10): ")
-    len_of_array = int(user_input)
+    len_of_array = int(input("Enter the length of the array (e.g., 10): "))
     
     if len_of_array <= 0:
         print("Size must be positive.")
