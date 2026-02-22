@@ -58,13 +58,11 @@ class MaxHeap:
     def insert(self, key: int):
         """Inserts a new key into the heap."""
         self.heap.append(key)
-        # Bubble up logic (optional for this exercise, but good to have)
         i = len(self.heap) - 1
         while i > 0 and self.heap[self.parent(i)] < self.heap[i]:
             self.heap[i], self.heap[self.parent(i)] = self.heap[self.parent(i)], self.heap[i]
             i = self.parent(i)
 
-    # --- Visualization Tools (Keeping your cool code) ---
     def plot_heap(self):
         """Visualizes the heap as a tree using NetworkX and Matplotlib."""
         G = nx.DiGraph()

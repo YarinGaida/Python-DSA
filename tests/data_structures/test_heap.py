@@ -11,13 +11,11 @@ try:
         # Create random array
         arr = [random.randint(1, 100) for _ in range(len_of_array)]
         print(f"Original Array: {arr}")
-
+        
         # Build Heap
         print("Building Max Heap...")
         heap.build_max_heap(arr)
         print(f"Heap Array:     {heap.heap}")
-        
-        print("Opening visualization window...")
         heap.plot_heap()
         
 except ValueError:
